@@ -1,0 +1,249 @@
+<head>
+
+<link rel="stylesheet" href="not.css">
+<script src=".js"></script>
+<style type="text/css">
+
+/* FONT CALL IN
+==============================================*/
+
+@font-face {
+
+font-family:"Gotham_Round";
+src:url("Fonts/Gotham-Rounded-Light.ttf");
+font-style: normal;
+font-weight: 10;
+}
+
+@font-face {
+
+font-family:"Gotham_Round";
+src:url("Fonts/Gotham-Rounded-Book.ttf");
+font-style: normal;
+font-weight: 100;
+}
+
+@font-face {
+
+font-family:"Gotham_Round";
+src:url("Fonts/Gotham-Rounded-Medium.ttf");
+font-style: normal;
+font-weight: 200;
+}
+
+@font-face {
+
+font-family:"Gotham_Round";
+src:url("Fonts/Gotham-Rounded-Bold.ttf");
+font-style: normal;
+font-weight: 300;
+}
+
+@font-face {font-family:"Gotham_Round";
+src:url("Fonts/Gotham-Rounded-Light-Italic.ttf");
+font-style: italic;
+font-weight: 10;
+}
+
+@font-face {
+
+font-family:"Gotham_Round";
+src:url("Fonts/Gotham-Rounded-Book-Italic.ttf");
+font-style: italic;
+font-weight: 100;
+}
+
+@font-face {
+
+font-family:"Gotham_Round";
+src:url("Fonts/Gotham-Rounded-Medium-Italic.ttf");
+font-style: italic;
+font-weight: 200;
+}
+
+@font-face {
+
+font-family:"Gotham_Round";
+src:url("Fonts/Gotham-Rounded-Bold-Italic.ttf");
+font-style: italic;
+font-weight: 300;
+}
+
+/* Gotham Rounded Web Liscense in "Fonts" Folder*/
+
+
+/* PAGE STYLE
+==============================================*/
+
+body {
+
+	padding: 50px;
+	z-index: -1;
+	width: 100%;
+	height: 4800px;
+	background-size: 300px;
+	background-image: url("Sparkle.gif");
+	position: absolute;
+	margin-top: 0px;
+	-webkit-animation-name: BGMOVE;
+	-webkit-animation-duration: 3000s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	font-family: "Gotham_Round";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 40px;
+	color: #FF00F9;
+
+}
+
+	@-webkit-keyframes BGMOVE {
+
+  0% { background-position: 900% 1700%}
+	100% { background-position: 5% 5%}
+
+}
+
+@-webkit-keyframes BGCOLOR {
+
+  0% {background-color:#D7CBD7;}
+	50% {background-color:#57a1bd;}
+	100% {background-color:#D7CBD7;}
+
+}
+
+.Head {
+	font-family: "Gotham_Round";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 40px;
+	float:left;
+	height: 100px;
+	width:100%;
+	color: #FF00F9;
+	-webkit-animation: TEXTCOLOR 20s infinite;
+
+}
+
+@-webkit-keyframes TEXTCOLOR {
+
+  0% {color:#FF00F9;}
+	50% {color:#5BB5DD;}
+	100% {color:#FF00F9;}
+
+}
+
+
+
+
+.Port_button {
+
+	z-index: 1;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background-image: url("Resources/Button_Icons/Port_Icon.svg");
+	text-align: center;
+	font-family: "Gotham_Round";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	color: #FF00F9;
+	float: left;
+
+
+}
+
+.Port_button:hover {
+
+  background-image: url("Resources/Button_Icons/Port_Icon_Hover.svg");
+
+}
+
+.Port_button:active {
+
+  background-image: url("Resources/Button_Icons/Port_Icon_Click.svg");
+
+
+}
+
+.Res_button {
+
+	z-index: 1;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background-image: url("Resources/Button_Icons/Res_Icon.svg");
+	text-align: center;
+	font-family: "Gotham_Round";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	color: #FF00F9;
+	float: left;
+
+}
+
+.Res_button:hover {
+
+  background-image: url("Resources/Button_Icons/Res_Icon_Hover.svg");
+
+}
+
+.Res_button:active {
+
+  background-image: url("Resources/Button_Icons/Res_Icon_Click.svg");
+
+}
+
+.Res_button_2 {
+
+	z-index: 1;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background-image: url("Resources/Button_Icons/Res_2_Icon.svg");
+	background-position: center;
+	background-size:cover;
+	text-align: center;
+	font-family: "Gotham_Round";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	color: #FF00F9;
+	float: left;
+
+
+}
+
+.Res_button_2:hover {
+
+  background-image: url("Resources/Button_Icons/Res_2_Icon_Hover.svg");
+	background-size:cover;
+	background-position: center;
+
+
+}
+
+.Res_button_2:active {
+
+  background-image: url("Resources/Button_Icons/Res_2_Icon_Click.svg");
+	background-size:cover;
+	background-position: center;
+
+
+}
+
+
+/* BODY
+==============================================*/
+
+</head>
+</style>
+
+<body>
+<div class ="Head">Omar Choudhury <br>Graphic Designer</div>
+<a href="Resources/PDFs/Omar_Choudhury_2017_Portfolio.pdf"><div class="Port_button"></div></a>
+<a href="Resources/PDFs/Omar_Choudhury_2017_Resume.pdf"><div class="Res_button"></div></a>
+<a href="Resources/PDFs/Selfie_Space.pdf"><div class="Res_button_2"></div></a>
+</body>
