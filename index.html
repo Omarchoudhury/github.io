@@ -83,7 +83,7 @@ body {
 	height: 1300px;
 	background-size: 300px;
 	background-image: url("Sparkle.gif");
-	position: absolute;
+	position: inherit;
 	margin-top: 0px;
 	-webkit-animation-name: BGMOVE;
 	-webkit-animation-duration: 3000s;
@@ -264,6 +264,48 @@ h1 {
 
 }
 
+#top, #bottom, #left, #right {
+	background-color: #FF00F9;
+	position: fixed;
+	z-index: 10;
+	-webkit-animation: BORDERCOLOR 20s infinite;
+
+	}
+
+	@-webkit-keyframes BORDERCOLOR {
+
+	  0% {background-color: #FF00F9;}
+		50% {background-color:#5BB5DD;}
+		100% {background-color:#FF00F9;}
+
+	}
+
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 4px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 4px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+@media
+
+only screen and (max-width: 500px),
+
+only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+
+{
+	#top, #bottom, #left, #right { display: none; }
+}
+
+
+
 
 /* BODY
 ==============================================*/
@@ -272,6 +314,10 @@ h1 {
 </style>
 
 <body>
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
 <div class ="Head">Omar Choudhury <br><h1>Graphic Designer</h1></div>
 <div class ="ruleline"></div>
 <a href="Resources/PDFs/Omar_Choudhury_2017_Portfolio.pdf"><div class="Port_button"></div></a>
