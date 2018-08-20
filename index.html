@@ -80,23 +80,20 @@ font-weight: 300;
 /* PAGE STYLE
 ==============================================*/
 
-.flip-v-bg{
-background-repeat: no-repeat;
 
 }
 .flip-h-bg{
 background-repeat: no-repeat;
 }
 
-body {
-
-	padding: 50px;
+.flip-v-bg{
+  background-repeat: no-repeat;
+  padding: 50px;
 	z-index: -1;
 	width: 960px;
 	height: 900px;
 	background-size: 2000px;
 	background-image: url("circuit.svg");
-	background-repeat: repeat-x;
 	position: inherit;
 	margin-top: 0px;
 	font-family: "Gotham_Round";
@@ -322,8 +319,7 @@ h1 {
 </head>
 </style>
 
-<body>
-class="flip-v-bg">
+<body class="flip-v-bg">
 <canvas id="canvas-flip-bg"></canvas>
 <div id="left"></div>
 <div id="right"></div>
