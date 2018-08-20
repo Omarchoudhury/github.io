@@ -1,8 +1,4 @@
 <head>
-	<!--[if lte IE 6]>
-	<style>#top, #bottom, #left, #right { display: none; }</style>
-<![endif]-->
-
 <link rel="stylesheet" href="not.css">
 <canvas style="display:none" id="canvas"></canvas>
 <script src="bgflip.js"></script>
@@ -81,12 +77,7 @@ font-weight: 300;
 ==============================================*/
 
 
-}
-.flip-h-bg{
-background-repeat: no-repeat;
-}
-
-.flip-v-bg{
+body{
   background-repeat: no-repeat;
   padding: 50px;
 	z-index: -1;
@@ -94,6 +85,7 @@ background-repeat: no-repeat;
 	height: 900px;
 	background-size: 1800px;
 	background-image: url("circuit.svg");
+  background-repeat: repeat-y;
 	position: inherit;
 	margin-top: 0px;
 	font-family: "Gotham_Round";
@@ -103,10 +95,7 @@ background-repeat: no-repeat;
 	color: #FF00F9;
 
 }
-#canvas-flip-bg{
-    border:1px solid #000;
-    display:none;
-}
+
 
 
 	@-webkit-keyframes BGMOVE {
@@ -261,7 +250,7 @@ h1 {
  	float: left;
 	background-color: #FF00F9;
 	position: absolute;
-	top:70px;
+	top:120px;
 	left:70px;
 	-webkit-animation: RULECOLOR 20s infinite;
 
@@ -323,8 +312,8 @@ h1 {
 </head>
 </style>
 
-<body class="flip-v-bg">
-<canvas id="canvas-flip-bg"></canvas>
+<body>
+
 <div id="left"></div>
 <div id="right"></div>
 <div id="top"></div>
