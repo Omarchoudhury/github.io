@@ -254,31 +254,24 @@ h1 {
 	left:70px;
 	-webkit-animation: RULECOLOR 20s infinite;
 
-}
+  }
 
-@-webkit-keyframes RULECOLOR {
+  @-webkit-keyframes RULECOLOR {
 
-  0% {background-color: #FF00F9;}
-	50% {background-color:##FF1C3E;}
-	100% {background-color:#FF00F9;}
+    0% {background-color: #FF00F9;}
+	  50% {background-color:##FF1C3E;}
+	  100% {background-color:#FF00F9;}
 
-}
+  }
 
-#top, #bottom, #left, #right {
-	background-color: #FF00F9;
-	position: fixed;
-	z-index: 10;
-	-webkit-animation: BORDERCOLOR 20s infinite;
+   #top, #bottom, #left, #right {
+	   background-color: #FF00F9;
+	   position: fixed;
+	   z-index: 10;
+	   -webkit-animation: BORDERCOLOR 20s infinite;
 
-	}
+	   }
 
-	@media
-
-	only screen and (max-width: 500px),
-	only screen and (min-device-width: 768px) and (max-device-width: 1024px)
-	{
-		#top, #bottom, #left, #right {display:none;}
-	}
 
 	@-webkit-keyframes BORDERCOLOR {
 
@@ -287,6 +280,7 @@ h1 {
 		100% {background-color:#FF00F9;}
 
 	}
+
 
 	#left, #right {
 		top: 0; bottom: 0;
@@ -302,7 +296,13 @@ h1 {
 		#top { top: 0; }
 		#bottom { bottom: 0; }
 
+    @media
 
+    only screen and (max-width: 500px),
+    only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+    {
+      #top, #bottom, #left, #right {display:none;}
+    }
 
 
 
