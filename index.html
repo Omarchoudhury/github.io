@@ -77,38 +77,56 @@ font-weight: 300;
 
 
 body{
-  padding: 50px;
+  height: 100%;
+  position: relative;
 	z-index: -1;
-	width: 960px;
-	height: 900px;
 	background-size: 1400px;
 	background-image: url("BG/circuit.svg");
   background-color: #21189b;
   background-repeat: repeat-x;
-	position: inherit;
 	margin-top: 0px;
 	font-family: "Gotham_Round";
 	font-style: normal;
 	font-weight: 300;
 	font-size: 40px;
 	color: #FF00F9;
-
+  left: 0px;
+  overflow-x: clip;
 }
-
-
 
 	@-webkit-keyframes BGMOVE {
 
   0% { background-position: 900% 1700%}
 	100% { background-position: 5% 5%}
 
-}
+  }
 
-@-webkit-keyframes BGCOLOR {
+  @-webkit-keyframes BGCOLOR {
 
   0% {background-color:#D7CBD7;}
 	50% {background-color:#57a1bd;}
 	100% {background-color:#D7CBD7;}
+
+  }
+
+.container{
+  padding: 50px;
+	height: 100%;
+}
+
+footer{
+  width: 100vw;
+  height: 250px;
+  bottom: 0px;
+  -webkit-animation: FOOTERCOLOR 20s infinite;
+
+  }
+
+  @-webkit-keyframes FOOTERCOLOR {
+
+    0% {background-color: #FF00F9;}
+	  50% {background-color: #FF1C3E;}
+	  100% {background-color:#FF00F9;}
 
 }
 
@@ -322,10 +340,14 @@ h1 {
 <div id="right"></div>
 <div id="top"></div>
 <div id="bottom"></div>
+<div class="container">
 <div class ="Head">Omar Choudhury <br><h1>Graphic Designer</h1></div>
 <div class ="ruleline"></div>
 <a href="Resources/PDFs/Omar_Choudhury_2019_Portfolio.pdf"><div class="Port_button"></div></a>
 <a href="Resources/PDFs/Omar_Choudhury_2019_Resume.pdf"><div class="Res_button"></div></a>
 <a href="Resources/PDFs/Selfie_Space.pdf"><div class="SS_button"></div></a>
+</div>
+<footer>
+</footer>
 
 </body>
