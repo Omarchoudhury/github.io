@@ -130,6 +130,22 @@ footer{
 
 }
 
+.navigation{
+  height: 50px;
+  width: 100%;
+  z-index: 7;
+  position: fixed;
+  -webkit-animation: NAVCOLOR 20s infinite;
+  }
+
+  @-webkit-keyframes NAVCOLOR {
+
+    0% {background-color: #FF00F9;}
+    50% {background-color: #FF1C3E;}
+    100% {background-color:#FF00F9;}
+
+}
+
 .content{
   width: 100vw;
   background-color: #F9E4D7;
@@ -344,10 +360,11 @@ h1 {
 
 <body>
 
-  <div id="left"></div>
-  <div id="right"></div>
-  <div id="top"></div>
-  <div id="bottom"></div>
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+<div class="navigation"></div>
 <div class="container">
 <div class ="Head">Omar Choudhury <br><h1>Graphic Designer</h1></div>
 <div class ="ruleline"></div>
