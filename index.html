@@ -169,12 +169,71 @@ footer{
 
 }
 
+
 h1 {
 	font-family: "Gotham_Round";
 	font-style: italic;;
 	font-weight: 100;
 	font-size: 40px;
-	line-height: 1px;
+	line-height: 0px;
+}
+
+#nav {
+  margin: 0px;
+  text-align: center;
+  list-style: none;
+  font-family: "Gotham_Round";
+  font-style: normal;
+  font-weight: 10;
+  font-size: 18px;
+}
+
+#nav ul{
+  color: #0DF4FF;
+  padding:0px;
+  }
+
+#nav li{
+  float: left;
+  width: 170px;
+  height: 100%;
+  line-height: 50px;
+  z-index: 0;
+  -webkit-animation: BOXCOLOR 20s infinite;
+}
+@-webkit-keyframes BOXCOLOR {
+
+  0% {background-color: #FF00F9;}
+  50% {background-color: #FF1C3E;}
+  100% {background-color:#FF00F9;}
+
+}
+
+ul li a{
+  text-decoration: none;
+  color: F9E4D7;
+}
+
+ul li a:hover{
+  background-color: #F9E4D7;
+  display: block;
+  height:50px;
+  -webkit-animation: TXTCOLOR 20s infinite;
+}
+@-webkit-keyframes TXTCOLOR {
+
+  0% {color: #FF00F9;}
+  50% {color: #FF1C3E;}
+  100% {color:#FF00F9;}
+
+}
+
+ul li ul li{
+  display: none;
+}
+
+ul li:hover ul li{
+  display: block;
 }
 
 .Head {
@@ -305,6 +364,15 @@ h1 {
 
 }
 
+
+  @-webkit-keyframes RAILCOLOR {
+
+    0% {background-color: #FF00F9;}
+    50% {background-color: #FF1C3E;}
+    100% {background-color:#FF00F9;}
+
+}
+
 .ruleline {
 	height: 4px;
 	width: 580px;
@@ -377,9 +445,21 @@ h1 {
 
 <div id="left"></div>
 <div id="right"></div>
-<div id="top"></div>
 <div id="bottom"></div>
-<div class="navigation"></div>
+<div class="navigation">
+<ul id="nav">
+  <li><a>About</a></li>
+  <li><a>Contact</a></li>
+  <li><a>Work</a><ul id="nav">
+    <li><a>Vector</a></li>
+    <li><a>Sculpture</a></li>
+    <li><a>Web</a></li>
+    <li><a>Branding</a></li>
+    <li><a>Lettering</a></li>
+  </ul></li>
+  <li><a>Showcase</a></li>
+</ul>
+</div>
 <div class="container">
 <div class ="Head">Omar Choudhury <br><h1>Graphic Designer</h1></div>
 <div class ="ruleline"></div>
