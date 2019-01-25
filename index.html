@@ -178,6 +178,17 @@ h1 {
 	line-height: 0px;
 }
 
+#line {
+ border-bottom:2px solid #F9E4D7;
+ margin: 0px;
+ text-align: center;
+ list-style: none;
+ font-family: "Gotham_Round";
+ font-style: normal;
+ font-weight: 10;
+ font-size: 18px;
+}
+
 #nav {
   margin: 0px;
   text-align: center;
@@ -200,6 +211,7 @@ h1 {
   line-height: 50px;
   z-index: 0;
   -webkit-animation: BOXCOLOR 20s infinite;
+  cursor: pointer;
 }
 @-webkit-keyframes BOXCOLOR {
 
@@ -209,9 +221,14 @@ h1 {
 
 }
 
+a {
+  display: block;
+}
+
 ul li a{
   text-decoration: none;
   color: F9E4D7;
+
 }
 
 ul li a:hover{
@@ -375,11 +392,11 @@ ul li:hover ul li{
 
 .ruleline {
 	height: 4px;
-	width: 580px;
+	width: 565px;
  	float: left;
 	color: #FF00F9;
 	position: absolute;
-	top:200px;
+	top:190px;
 	left:70px;
 	-webkit-animation: RULECOLOR 20s infinite;
 
@@ -451,10 +468,10 @@ ul li:hover ul li{
   <li><a>About</a></li>
   <li><a>Contact</a></li>
   <li><a>Work</a><ul id="nav">
-    <li><a>Vector</a></li>
-    <li><a>Sculpture</a></li>
-    <li><a>Web</a></li>
-    <li><a>Branding</a></li>
+    <li id="line"><a>Vector</a></li>
+    <li id="line"><a>Sculpture</a></li>
+    <li id="line"><a>Web</a></li>
+    <li id="line"><a>Branding</a></li>
     <li><a>Lettering</a></li>
   </ul></li>
   <li><a>Showcase</a></li>
