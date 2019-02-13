@@ -81,8 +81,8 @@ body{
   position: relative;
 	z-index: -1;
 	background-size: 1400px;
-	background-image: url("BG/circuit.svg");
-  background-color: #21189b;
+	background-image: url("BG/circuit.png");
+  /*background-color: #21189b;*/
 	margin-top: 0px;
 	font-family: "Gotham_Round";
 	font-style: normal;
@@ -92,6 +92,7 @@ body{
   overflow-x: hidden;
   padding: 0px;
   margin-left: 0px;
+  -webkit-animation: BGCOLOR 20s infinite;
 }
 
 	@-webkit-keyframes BGMOVE {
@@ -103,10 +104,13 @@ body{
 
   @-webkit-keyframes BGCOLOR {
 
-  0% {background-color:#D7CBD7;}
+  0% {background-color:#21189b;}
+	50% {background-color:##271284;}
+	100% {background-color:#21189b;}
+  /*0% {background-color:#D7CBD7;}
 	50% {background-color:#57a1bd;}
 	100% {background-color:#D7CBD7;}
-
+  */
   }
 
 .container{
